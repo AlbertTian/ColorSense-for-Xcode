@@ -58,9 +58,9 @@
 
 
                 NSString *rgbHexPattern = @"(HEXRGB)\\s*\\(\\s*(0[xX][0-9a-fA-F]+)\\s*\\)";
-                _rgbHexMacroRegex = [[NSRegularExpression regularExpressionWithPattern:rgbHexPattern options:0 error:NULL] retain];
+                _rgbHexMacroRegex = [NSRegularExpression regularExpressionWithPattern:rgbHexPattern options:0 error:NULL];
                 NSString *rgbaHexPattern = @"(HEXRGBA)\\s*\\(\\s*(0[xX][0-9a-fA-F]+)\\s*,\\s*([0-9]*.?[0-9]*f?)\\s*\\)";
-                _rgbaHexMacroRegex = [[NSRegularExpression regularExpressionWithPattern:rgbaHexPattern options:0 error:NULL] retain];
+                _rgbaHexMacroRegex = [NSRegularExpression regularExpressionWithPattern:rgbaHexPattern options:0 error:NULL];
         }
         return self;
 }
